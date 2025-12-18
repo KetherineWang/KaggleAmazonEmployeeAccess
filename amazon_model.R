@@ -8,11 +8,11 @@ packageVersion("catboost")
 library(data.table)
 library(catboost)
 
-train_path <- "C:/Users/HongtingWang/Documents/STAT 348 - Predictive Analytics/AmazonEmployeeAccess/data/train.csv"
-test_path <- "C:/Users/HongtingWang/Documents/STAT 348 - Predictive Analytics/AmazonEmployeeAccess/data/test.csv"
+setwd("C:/Users/HongtingWang/Documents/STAT 348 - Predictive Analytics/KaggleAmazonEmployeeAccess/data")
 
-train <- fread(train_path)
-test <- fread(test_path)
+
+train <- fread("train.csv")
+test <- fread("test.csv")
 
 cat("Train shape:", nrow(train), "rows", ncol(train), "columns\n")
 cat("Test shape:", nrow(test), "rows", ncol(test), "columns\n")
