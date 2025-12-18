@@ -10,7 +10,6 @@ library(catboost)
 
 setwd("C:/Users/HongtingWang/Documents/STAT 348 - Predictive Analytics/KaggleAmazonEmployeeAccess/data")
 
-
 train <- fread("train.csv")
 test <- fread("test.csv")
 
